@@ -1,0 +1,232 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body{
+  min-height: 100vh;
+  background-color: rgb(247, 246, 245);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Poster */
+.poster{
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/background-imge.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.poster-header{
+  position: relative;
+  top: 30px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+/* container */
+.container{
+  padding: 30px 0 30px 0;
+}
+.about-team{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 4% 0 4%;
+}
+
+.about-team-1{
+  margin-bottom:30px;
+}
+
+.about-team-2{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-top:25px;
+  margin-bottom:10px;
+}
+
+.title{
+  text-align: left;
+  font-size: larger;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.para{
+  font-size: 13px;
+  text-align: justify;
+}
+
+/* Picture Con */
+.picture-con{
+  background-color: rgb(214, 214, 214);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+.features{
+  height: 100%;
+  width: 40%;
+}
+
+.picture{
+  height: 250px;
+  width: 60%;
+  background-image: url("../images/about-page-img.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.expertise{
+  margin-left: 30px;
+}
+
+.feat-flex{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.feat-title{
+  text-align: left;
+  font-size: larger;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.feat-p{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+
+.icon{
+  height: 35px;
+  width: 35px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60% 60%;
+}
+
+.icon1{
+  background-image: url("../images/img1.png");
+}
+
+.icon2{
+  background-image: url("../images/img2.png");
+}
+
+.icon3{
+  background-image: url("../images/img3.png");
+}
+
+.icon4{
+  background-image: url("../images/img4.png");
+}
+
+.service, .bar{
+  margin-bottom: 15px;
+}
+
+.bar{
+  height: 7px;
+  width: 90%;
+  display: grid;
+}
+
+.blue-rang{
+  height: 100%;
+  background-color: rgb(2, 2, 107);
+}
+
+.gray-area{
+  height: 100%;
+  background-color: rgb(211, 211, 211);
+}
+
+.bar1{
+  grid-template-columns: 75% auto;
+}
+
+.bar2{
+  grid-template-columns: 60% auto;
+}
+
+.bar3{
+  grid-template-columns: 75% auto;
+}
+
+.bar4{
+  grid-template-columns: auto 75%;
+}
+
+
+@media only screen and (max-width: 1080px){
+  .features{
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .about-team{
+    width: 100%;
+  }
+
+  .about-team-2{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows:auto auto;
+    gap: 6%;
+
+  }
+
+  .picture-con{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .picture{
+    height: 100px;
+    width: 100%;
+    background-image: url("../images/about-page-img.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  .features{
+    margin-top: 25px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  
+.feat-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.feat-title{
+  text-align: center;
+}
+}
